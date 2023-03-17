@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Navigate, Routes, Route } from 'react-router-dom';
+import GlobalStyle from './globalStyles';
 import Home from './views/Home';
 
 function App() {
   return (
     <Router>
+      <GlobalStyle />
       <Routes>
         <Route exact path="/" element={<Navigate to="/home" replace />} />
         <Route exact path="/home" element={<Home />} />
