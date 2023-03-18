@@ -132,7 +132,7 @@ export const Button = styled.button`
   &:hover:before {
     height: 500%;
   }
-	
+
   &:hover {
     color: black;
   }
