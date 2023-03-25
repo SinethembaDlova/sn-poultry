@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Navigate, Routes, Route } from 'react-router-d
 import GlobalStyle from './globalStyles';
 import Navbar from './components/Navbar';
 import Home from './views/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" element={<Navigate to="/home" replace />} />
         <Route exact path="/home" element={<Home />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
